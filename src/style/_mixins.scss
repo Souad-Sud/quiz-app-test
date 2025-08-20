@@ -1,0 +1,15 @@
+@mixin responsive-font($desktop, $tablet: null, $mobile: null) {
+  font-size: $desktop;
+
+  @if $tablet {
+    @media (max-width: $breakpoint-tablet) {
+      font-size: $tablet;
+    }
+  }
+
+  @if $mobile {
+    @media (max-width: $breakpoint-mobile) {
+      font-size: $mobile;
+    }
+  }
+}
