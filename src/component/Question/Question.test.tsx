@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import Question from "@/components/Question";
+import Question from "./";
 import questions from "@/data/data";
 
 describe("Tests that the question is rendered", () => {
