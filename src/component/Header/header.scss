@@ -1,0 +1,38 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+
+
+.header {
+    text-align: center;
+    margin: 150px 0;
+    position: relative;
+    font-family: $font-edu;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 50%;
+        height: 2px;
+        color: white;
+        background-color: white;
+        margin: 0 auto;
+    }
+    &__title {
+        color: rgb(200, 236, 255);
+        font-size: 3.3rem;
+        font-weight: $bold;
+        margin: 0;
+        padding: 0 0 10px 0;
+        @include responsive-font($font-size-h1-desktop, $font-size-h1-tablet, $font-size-h1-mobile);
+        &::first-letter {
+        font-family: $font-letter;
+        color: rgb(116, 175, 182);
+        font-size: 7rem;
+        font-weight: $lighter;
+        font-style: $italic;
+        
+    }
+
+    }
+    
+}

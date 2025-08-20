@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: "Anaheim", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
+  /* font-family: "Anaheim", sans-serif; */
+  /* font-optical-sizing: auto;
+  font-style: normal; */
   margin: 0;
   padding: 0;
   display: flex;

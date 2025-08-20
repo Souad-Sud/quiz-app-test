@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+
+//Font 
+
+$font-edu: "Edu SA Hand", cursive;
+$font-badscript: "Bad Script", cursive;
+$font-letter: "Cookie", cursive;
+$lighter: lighter;
+$bold: bold;
+$normal: normal;
+$italic: italic;
+$oblique: oblique;
+
+// Font sizes
+$font-size-h1-desktop: 3.3rem;
+$font-size-h1-tablet: 2rem;
+$font-size-h1-mobile: 1.5rem;
+
+//colors 
+$white-color: white;
+$letter-color:  rgb(200, 236, 255);
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 480px;
+
+$font-size-first-letter-desktop: 7rem;
+$font-size-first-letter-mobile: 5rem;

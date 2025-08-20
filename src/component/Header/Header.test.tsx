@@ -1,8 +1,6 @@
 import {render, screen} from "@testing-library/react";
 import Header from ".";
 
-
-
 describe("That the header renders correctly", () => {
     it('Tests that the page title is on screen', () => {
         render(<Header />);
