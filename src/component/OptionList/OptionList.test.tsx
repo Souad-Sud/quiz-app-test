@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import OptionList from "@/components/OptionList";
+
 import questions from "@/data/data";
 
 describe("That the OptionList component works correctly", () => {
