@@ -1,8 +1,8 @@
+import './nextButton.scss'
 const NextButton = () => {
     return(
-        <div>
-            Next button
-
+        <div className="nextbtnContainer">
+         <button className="nextbtnContainer__btn" >next</button>
         </div>
     )
 }

@@ -1,0 +1,48 @@
+@import "../../style/variables";
+@import "../../style/mixins";
+.nextbtnContainer {
+  margin: 0;
+  padding: 0;
+
+  &__btn {
+    font-family: $font-badscript;
+    position: relative;       
+    overflow: hidden;         
+    cursor: pointer;
+    padding: 5px 80px;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 10px;
+    border: 2px solid rgb(200, 236, 255);
+    border-radius: 30px;
+    color: rgb(116, 175, 182);   
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgb(25, 25, 23) 50%, rgb(4, 80, 138) 100%);
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.364);
+    transition: color 0.3s ease;
+    &::before {
+        content: "==>";
+        color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: rgb(200, 236, 255);
+        z-index: 0;
+        transition: width 0.4s ease;
+        display: flex;          
+        align-items: center;    
+        justify-content: center; 
+        overflow: hidden;
+    }
+    &:hover::before {
+        width: 100%;            
+        left: 0;
+    }
+    position: relative; 
+    z-index: 1;
+    &:hover {
+      color: rgb(255, 255, 255); 
+    }
+  }
+}
