@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import questions from "@/data/data";
 import OptionList from "../OptionList";
 import NextButton from "../NextButton";
+import './question.scss'
 
 const Question: React.FC = () => {
   const [questionNumber, setQuestionNumber] = useState(0);
@@ -32,12 +33,12 @@ const Question: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="questionContainer">
      
-      <h2>
+      <h2 className="questionContainer__header">
         Question {questionNumber + 1} of {questions.length}
       </h2>
-      <h3>{currentQuestion.question}</h3>
+      <h3 className="questionContainer__subtitle">{currentQuestion.question}</h3>
  
       <OptionList
         handleClick={handleAnswer}
