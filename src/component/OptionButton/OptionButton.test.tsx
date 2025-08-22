@@ -1,8 +1,8 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import OptionButton from "@/components/OptionButton";
+import OptionButton from ".";
+
 
 describe("Tests that the option buttons work", () => {
-
     it("tests that the button gets the name of the option", () => {
         const optionText = "Option 1"
 

@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import NextButton from ".";
+import NextButton from "./";
 
 it("tests that the next button has the right name", () => {
     render(<NextButton changeQuestion={() => {}}/>)
