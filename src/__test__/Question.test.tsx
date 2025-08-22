@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import Question from "../component/Question";
 import questions from "@/data/data";
+import Question from "@/component/Question";
 
 describe("Tests that the question is rendered", () => {
     it("Tests that there's an H2 saying which question is the user is responding to", () => {

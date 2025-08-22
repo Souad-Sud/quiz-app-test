@@ -1,5 +1,4 @@
 import React from "react";
-import './OptionButton.test'
 
 type OptionButtonProps = {
   option: string;

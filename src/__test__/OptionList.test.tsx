@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import OptionList from ".";
 import questions from "@/data/data";
+import OptionList from "@/component/OptionList";
 
 describe("That the OptionList component works correctly", () => {
     it("tests that we have 4 buttons", () => {
