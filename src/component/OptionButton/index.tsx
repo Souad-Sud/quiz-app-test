@@ -1,4 +1,5 @@
 import React from "react";
+import './optionButton.scss'
 
 type OptionButtonProps = {
   option: string;
@@ -26,14 +27,17 @@ const OptionButton: React.FC<OptionButtonProps> = ({
   }
 
   return (
+    <div className="optionListContainer">
     <button
       data-testid="option-button"
-      className ={`btn ${className}`}
+      className ={`optionListContainer__btn ${className}`}
       disabled={disabled}
       onClick={() => handleClick(option)}
     >
       {option}
     </button>
+
+    </div>
   );
 };
 

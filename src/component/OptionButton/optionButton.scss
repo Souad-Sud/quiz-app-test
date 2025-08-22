@@ -1,3 +1,36 @@
 @import "../../style/variables";
 @import "../../style/mixins";
 
+.optionListContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+
+    &__btn {
+        font-family: $font-badscript;
+        position: relative;       
+        overflow: hidden;         
+        cursor: pointer;
+        padding: 5px 80px;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        margin: 10px;
+        border: 2px solid rgb(200, 236, 255);
+        border-radius: 30px;
+        color: rgb(116, 175, 182);   
+        background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgb(25, 25, 23) 50%, rgb(4, 80, 138) 100%);
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.364);
+        transition: color 0.3s ease;
+    }
+    
+    &__btn.right {
+    border-color: green;
+    color: green;
+  }
+
+  &__btn.wrong {
+    border-color: red;
+    background-color: #f8d7da; 
+    color: red;
+  }
+}
