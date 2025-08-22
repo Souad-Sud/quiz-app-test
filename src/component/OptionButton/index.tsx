@@ -1,11 +1,40 @@
-'use client'
-import './optionButton.scss'
-const OptionButton = () => {
-    return(
-        <div>
-            Option btn
-        </div>
-    )
-}
+import React from "react";
 
-export default OptionButton
+type OptionButtonProps = {
+  option: string;
+  handleClick: (option: string) => void;
+  userAnswer: string | null;
+  rightAnswer: string;
+  disabled?: boolean;
+};
+
+const OptionButton: React.FC<OptionButtonProps> = ({
+  option,
+  handleClick,
+  userAnswer,
+  rightAnswer,
+  disabled = false,
+}) => {
+  let className = "";
+
+  if (userAnswer) {
+    if (userAnswer === option && option === rightAnswer) {
+      className = "right";
+    } else if (userAnswer === option && option !== rightAnswer) {
+      className = "wrong";
+    }
+  }
+
+  return (
+    <button
+      data-testid="option-button"
+      className={className}
+      disabled={disabled}
+      onClick={() => handleClick(option)}
+    >
+      {option}
+    </button>
+  );
+};
+
+export default OptionButton;
