@@ -26,4 +26,8 @@
     20px 100%, 0 calc(100% - 20px), 0 20px
     );
     }
+
+    &__results {
+        background-color: red;
+    }
 }
