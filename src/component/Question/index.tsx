@@ -53,12 +53,13 @@ const Question: React.FC = () => {
       )}
 
       {userAnswer && questionNumber === questions.length - 1 && !showResults && (
-        <button onClick={handleFinish}>Finish</button>
+        <button onClick={handleFinish} className="questionContainer__btn">Finish</button>
       )}
 
       {/* Results */}
       {showResults && (
-        <div data-testid="results">
+        <div data-testid="results" className="questionContainer__results">
+          <p>Final Results</p>
           <p data-testid="right-answers">Right answers: {score.right}</p>
           <p data-testid="wrong-answers">Wrong answers: {score.wrong}</p>
         </div>
